@@ -160,7 +160,7 @@ def main():
         generated_answers.append(full_text[len(prefix):])
 
     scores = get_gpt_eval(story_prompts, generated_answers)
-    print_mean_scores(scores)
+    print_mean_scores(scores[1])
 
 
 if __name__ == "__main__":
