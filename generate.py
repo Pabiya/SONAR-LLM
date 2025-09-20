@@ -59,7 +59,7 @@ class SonarInferenceWrapper(nn.Module):
 
 
 def load_checkpoint_for_inference(ckpt_path, model, device="cpu"):
-    checkpoint = torch.load(ckpt_path, map_location=device)
+    checkpoint = torch.load(ckpt_path, map_location=device, weights_only=False)
     raw_model = model.module if hasattr(model, "module") else model
     raw_model.load_state_dict(checkpoint["model_state_dict"], strict=False)
 
