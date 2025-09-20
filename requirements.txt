@@ -16,7 +16,7 @@ fairseq2==0.4.6
 fairseq2n==0.4.6
 filelock==3.19.1
 frozenlist==1.7.0
-fsspec==2025.7.0
+fsspec==2025.3.0
 gdown==5.2.0
 gmpy2 @ file:///croot/gmpy2_1738085463648/work
 hf-xet==1.1.9
